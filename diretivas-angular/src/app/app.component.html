@@ -1,4 +1,4 @@
 <h1 class="text-success text-center">Live angular Diretivas</h1>
-<div [ngStyle]="{background:count<=5? 'red':'blue'}">
-    <h2 class="text-center">Contador: {{ count }}</h2>
+<div [ngClass]="{custom:count<5}" [ngStyle]=" {background:count<=5? 'red': 'blue'} ">
+    <h2 class="text-center ">Contador: {{ count }}</h2>
 </div>
