@@ -32,3 +32,14 @@
 <ul *ngFor="let pessoa of pessoas" class=" list-group mx-auto col-3 ">
     <li class="list-group-item ">O nome dele é {{pessoa.nome}} e seu sobrenome é {{pessoa.sobrenome}}</li>
 </ul>
+
+
+<!--enviando dados da lógica(typescript) para o template(HTML) -->
+
+<!--Binding direcional da lógica para o template (ou coloca -se dentro de chaves{} ou double moustache)-->
+<h3>{{ nome }}</h3>
+
+
+<!--enviando dados do template para a lógica-->
+<!--Binding direcional do template  para a lógica(coloca -se parenteses().)-->
+<button class="btn btn-success" (click)="clicou('Rodrigo')">Clique</button>

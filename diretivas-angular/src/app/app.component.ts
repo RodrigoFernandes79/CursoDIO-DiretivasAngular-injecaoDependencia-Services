@@ -9,6 +9,9 @@ import { interval } from 'rxjs';
 })
 export class AppComponent implements OnInit{
  count=0;
+
+ nome='Rodrigo Holanda Fernandes';
+
  pessoas =[
    {
   nome:'Ivonaldo',
@@ -45,7 +48,11 @@ export class AppComponent implements OnInit{
       )
       
     }
-     
+    
+    
+    clicou(nome:string):void{
+console.log('clicou em mim',nome)
+    }
     }
     
   
