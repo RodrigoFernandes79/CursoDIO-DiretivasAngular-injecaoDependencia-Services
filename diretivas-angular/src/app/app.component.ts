@@ -31,6 +31,8 @@ export class AppComponent implements OnInit{
  },
 ];
 
+text='';
+
  constructor(){}
 
   ngOnInit() {

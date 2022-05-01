@@ -42,4 +42,11 @@
 
 <!--enviando dados do template para a lógica-->
 <!--Binding direcional do template  para a lógica(coloca -se parenteses().)-->
-<button class="btn btn-success" (click)="clicou('Rodrigo')">Clique</button>
+<div class="mx-auto col-4">
+    <button class="btn btn-success" (click)="clicou('Rodrigo')">Clique</button>
+</div>
+<!--Desenvolvendo um two way data binding(coloca -se colchetes e parenteses)-->
+<div class="mx-auto col-4">
+    <input type="text" class="form-control" placeholder="Digite algo" [(ngModel)]="text">
+    <h3>Saída:{{ text }}</h3>
+</div>
