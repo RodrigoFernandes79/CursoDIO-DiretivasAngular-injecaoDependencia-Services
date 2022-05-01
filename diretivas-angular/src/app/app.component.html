@@ -26,3 +26,9 @@
         ESSE É O DEFAULT
     </li>
 </ul>
+
+
+
+<ul *ngFor="let pessoa of pessoas" class=" list-group mx-auto col-3 ">
+    <li class="list-group-item ">O nome dele é {{pessoa.nome}} e seu sobrenome é {{pessoa.sobrenome}}</li>
+</ul>

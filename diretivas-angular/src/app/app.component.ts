@@ -9,7 +9,25 @@ import { interval } from 'rxjs';
 })
 export class AppComponent implements OnInit{
  count=0;
- 
+ pessoas =[
+   {
+  nome:'Ivonaldo',
+  sobrenome:'Soares'
+ },
+ {
+  nome:'Rodrigo',
+  sobrenome:'Fernandes'
+ },
+ {
+  nome:'Marcela',
+  sobrenome:'Ferreira'
+ },
+ {
+  nome:'Regiane',
+  sobrenome:'Alves'
+ },
+];
+
  constructor(){}
 
   ngOnInit() {
