@@ -50,3 +50,7 @@
     <input type="text" class="form-control" placeholder="Digite algo" [(ngModel)]="text">
     <h3>Saída:{{ text }}</h3>
 </div>
+
+
+<!--Chamando a diretiva customizada-->
+<h3 appMarcaTexto corDeFundo="red" corDoTexto="blue">{{ nome }}</h3>
