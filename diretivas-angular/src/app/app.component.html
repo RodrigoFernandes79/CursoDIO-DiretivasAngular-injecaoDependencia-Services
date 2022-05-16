@@ -33,6 +33,9 @@
     <li class="list-group-item ">O nome dele é {{pessoa.nome}} e seu sobrenome é {{pessoa.sobrenome}}</li>
 </ul>
 
+<ul class="list-group mx-auto col-3">
+    <li class="list-group-item" *ngFor="let peopl of people">O nome é {{peopl.firstName}} seu sobrenome é {{peopl.lastName}} e sua idade é {{peopl.age}} anos</li>
+</ul>
 
 <!--enviando dados da lógica(typescript) para o template(HTML) -->
 

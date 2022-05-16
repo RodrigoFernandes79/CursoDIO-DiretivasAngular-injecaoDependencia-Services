@@ -1,3 +1,4 @@
+import { PeopleService } from './shared/services/people.service';
 import { OnInit } from '@angular/core';
 import { Component } from '@angular/core';
 import { interval } from 'rxjs';
@@ -32,30 +33,42 @@ export class AppComponent implements OnInit{
 ];
 
 text='';
+people=[
+	{
+		firstName:'',
+		lastName:'',
+		age:0
+	}
+];
 
- constructor(){}
+ constructor( private peopleService:PeopleService, ){ }
 
   ngOnInit() {
-   
+
      let interval = setInterval(()=>{
-       
+
       this.count++
-      
+
        if(this.count===10){
          clearInterval(interval)
        }
-       
+
       },1000
-      
+
       )
-      
+	this.getPessoas();
     }
-    
-    
+
+
     clicou(nome:string):void{
 console.log('clicou em mim',nome)
     }
+
+		getPessoas(){
+			this.peopleService.getPeople()
+			.subscribe(pessoas=>{this.people=pessoas});
+		}
     }
-    
-  
+
+
 
